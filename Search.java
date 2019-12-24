@@ -26,7 +26,7 @@ System.out.println("-1");
 }
 else
 {
-System.out.println(+flag);
+System.out.println(+(flag+1));
 }
 }
 }
