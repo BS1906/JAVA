@@ -5,15 +5,8 @@ class Array
 public static void main(String[] args)
 {
 Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
 int c=0,i,j,k,temp,p;
-int[] a=new int[n];
-for(i=0;i<n;i++)
-{
-a[i]=sc.nextInt();
-c++;
-}
-if(n<4)
+if(args.length!=4)
 {
 System.out.println("please enter 4 integer numbers");
 }
@@ -24,7 +17,7 @@ for(i=0;i<2;i++)
 {
 for(j=0;j<2;j++)
 {
-System.out.print(+a[k++]+" ");
+System.out.print(args[k++]+" ");
 }
 System.out.println();
 }
@@ -33,12 +26,10 @@ for(i=0;i<2;i++)
 {
 for(j=0;j<2;j++)
 {
-System.out.print(+a[--p]+" ");
+System.out.print(args[--p]+" ");
 }
 System.out.println();
 }
-
-
 }
 }
 }
